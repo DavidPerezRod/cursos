@@ -11,7 +11,6 @@
     //   let variable4: number = 123;
     //   let variable6: boolean= true;
     //   let variable7: Date= new Date();
-    //   //different situation. Variable5 hasn't been initialize and it's type going to be "any". 
     //   //But any, is a bad praxis. It admits any data type, and is a weak typing
     //   let variable5;
     //   variable5=variable3;
