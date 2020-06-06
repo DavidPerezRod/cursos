@@ -1,4 +1,6 @@
 {
+  "exclude": ["resources"],
+  "include": ["s2"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
