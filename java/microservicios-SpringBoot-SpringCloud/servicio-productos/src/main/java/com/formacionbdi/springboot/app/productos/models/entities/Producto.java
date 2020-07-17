@@ -24,10 +24,7 @@ public class Producto implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@SuppressWarnings("unused")
 	private String nombre;
-	
-	@SuppressWarnings("unused")
 	private Double precio;
 	
 	@Column(name = "CREATE_AT")

@@ -15,10 +15,8 @@ public class Item {
 		this.cantidad = cantidad;
 	}
 
-	@SuppressWarnings("unused")
 	private Producto producto;
 
-	@SuppressWarnings("unused")
 	private Integer cantidad;
 	
 	public Double getTotal() {

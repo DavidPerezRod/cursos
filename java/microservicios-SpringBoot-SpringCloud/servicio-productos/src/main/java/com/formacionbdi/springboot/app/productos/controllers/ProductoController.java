@@ -21,10 +21,6 @@ import com.formacionbdi.springboot.app.productos.models.service.IProductoService
 @RestController
 public class ProductoController {
 
-//  para recoger el valor de una variable de entorno que no sea por parametrización
-//	@Autowired
-//	private Environment environment;
-	
 	@Value("${server.port}")
 	private Integer puerto;
 	
@@ -34,7 +30,6 @@ public class ProductoController {
 	@GetMapping("/listar")
 	public List<Producto> listarProductos(){
 		return service.findAll().stream().map(producto ->{
-//			producto.setPort(Integer.parseInt(environment.getProperty("local.server.port")));
 			producto.setPort(puerto);
 			return producto;
 		}).collect(Collectors.toList());
@@ -43,14 +38,7 @@ public class ProductoController {
 	@GetMapping("/ver/{id}")
 	public Producto detalleProducto(@PathVariable Long id){
 		Producto producto= service.findById(id);
-//		producto.setPort(Integer.parseInt(environment.getProperty("local.server.port")));
 		producto.setPort(puerto);
-		
-// Código para pruebas de fallo con cirtuit breaker		
-//		boolean ok = false;
-//		if (ok == false) {
-//			throw new Exception("No se pudo cargar el producto");
-//		}
 		
 		return producto;
 	}

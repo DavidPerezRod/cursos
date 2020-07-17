@@ -65,30 +65,30 @@ public class ItemServiceImpl implements DefaultItemService {
 	return new Item(producto, cantidad);
     }
 
-    @Override
-    public Producto save(Producto producto) {
-	HttpEntity<Producto> body = new HttpEntity<Producto>(producto);
-	ResponseEntity<Producto> response = clienteRest.exchange(servicioProductoCrear, HttpMethod.POST, body,
-		Producto.class);
-	return response.getBody();
-    }
+	@Override
+	public Producto save(Producto producto) {
+		HttpEntity<Producto> body = new HttpEntity<Producto>(producto);
+		ResponseEntity<Producto> response = clienteRest.exchange(servicioProductoCrear, HttpMethod.POST, body,
+				Producto.class);
+		return response.getBody();
+	}
 
-    @Override
-    public Producto update(Producto producto, Long id) {
-	HttpEntity<Producto> body = new HttpEntity<Producto>(producto);
-	Map<String, String> params = new HashMap<>();
-	params.put(servicioProductoParamProductoId, id.toString());
+	@Override
+	public Producto update(Producto producto, Long id) {
+		HttpEntity<Producto> body = new HttpEntity<Producto>(producto);
+		Map<String, String> params = new HashMap<>();
+		params.put(servicioProductoParamProductoId, id.toString());
 
-	ResponseEntity<Producto> response = clienteRest.exchange(servicioProductoEditar, HttpMethod.PUT, body,
-		Producto.class, params);
-	return response.getBody();
-    }
+		ResponseEntity<Producto> response = clienteRest.exchange(servicioProductoEditar, HttpMethod.PUT, body,
+				Producto.class, params);
+		return response.getBody();
+	}
 
-    @Override
-    public void delete(Long id) {
-	Map<String, String> params = new HashMap<>();
-	params.put(servicioProductoParamProductoId, id.toString());
+	@Override
+	public void delete(Long id) {
+		Map<String, String> params = new HashMap<>();
+		params.put(servicioProductoParamProductoId, id.toString());
 
-	clienteRest.delete(servicioProductoBorrar, params);
-    }
+		clienteRest.delete(servicioProductoBorrar, params);
+	}
 }
