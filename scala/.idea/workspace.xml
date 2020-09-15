@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b20a964-3751-4e2d-901e-3edb7c568c3d" name="Default Changelist" comment="" />
+    <list default="true" id="1b20a964-3751-4e2d-901e-3edb7c568c3d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../codificacion.md" beforeDir="false" afterPath="$PROJECT_DIR$/../codificacion.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,11 +27,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../forks/tdd-by-example/src" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -42,5 +45,15 @@
       <updated>1591121737979</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="738" y="261" width="424" height="506" key="FileChooserDialogImpl" timestamp="1596883434642">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="738" y="261" width="424" height="506" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1596883434642" />
+    <state x="598" y="140" width="713" height="752" key="NewModule_or_Project.wizard" timestamp="1596883483868">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="598" y="140" width="713" height="752" key="NewModule_or_Project.wizard/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1596883483868" />
   </component>
 </project>
