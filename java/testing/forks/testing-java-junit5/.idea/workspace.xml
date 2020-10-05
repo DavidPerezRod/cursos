@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dfb3adb6-a1ad-4870-ac56-24b56004f3f6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/.m2/wrapper/dists/apache-maven-3.5.4-bin/jl1qqhdeineh9qg83dtj7i91c/apache-maven-3.5.4" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hKYs9ytd1X3ICLiY7ssGf4Ls3B" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="guru.springframework.sfgpetclinic.services.springdatajpa" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="guru.springframework.sfgpetclinic" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SpecialitySDJpaServiceTest.testDeleteByObject">
+    <configuration name="SpecialitySDJpaServiceTest.deleteVerifyingMostInvokedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testing-java-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guru.springframework.sfgpetclinic.services.springdatajpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guru.springframework.sfgpetclinic.services.springdatajpa" />
+      <option name="MAIN_CLASS_NAME" value="guru.springframework.sfgpetclinic.services.springdatajpa.SpecialitySDJpaServiceTest" />
+      <option name="METHOD_NAME" value="deleteVerifyingMostInvokedTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpecialitySDJpaServiceTest.findByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testing-java-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guru.springframework.sfgpetclinic.services.springdatajpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guru.springframework.sfgpetclinic.services.springdatajpa" />
+      <option name="MAIN_CLASS_NAME" value="guru.springframework.sfgpetclinic.services.springdatajpa.SpecialitySDJpaServiceTest" />
+      <option name="METHOD_NAME" value="findByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpecialitySDJpaServiceTest.testDeleteByObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testing-java-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guru.springframework.sfgpetclinic.services.springdatajpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guru.springframework.sfgpetclinic.services.springdatajpa" />
+      <option name="MAIN_CLASS_NAME" value="guru.springframework.sfgpetclinic.services.springdatajpa.SpecialitySDJpaServiceTest" />
+      <option name="METHOD_NAME" value="testDeleteByObject" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VetSDJpaServiceTest.deleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testing-java-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guru.springframework.sfgpetclinic.services.springdatajpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guru.springframework.sfgpetclinic.services.springdatajpa" />
+      <option name="MAIN_CLASS_NAME" value="guru.springframework.sfgpetclinic.services.springdatajpa.VetSDJpaServiceTest" />
+      <option name="METHOD_NAME" value="deleteById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VetSDJpaServiceTest.deleteByIdAtLeast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testing-java-junit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guru.springframework.sfgpetclinic.services.springdatajpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guru.springframework.sfgpetclinic.services.springdatajpa" />
+      <option name="MAIN_CLASS_NAME" value="guru.springframework.sfgpetclinic.services.springdatajpa.VetSDJpaServiceTest" />
+      <option name="METHOD_NAME" value="deleteByIdAtLeast" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SpecialitySDJpaServiceTest.testDeleteByObject" />
+        <item itemvalue="JUnit.SpecialitySDJpaServiceTest.findByIdTest" />
+        <item itemvalue="JUnit.VetSDJpaServiceTest.deleteByIdAtLeast" />
+        <item itemvalue="JUnit.VetSDJpaServiceTest.deleteById" />
+        <item itemvalue="JUnit.SpecialitySDJpaServiceTest.deleteVerifyingMostInvokedTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dfb3adb6-a1ad-4870-ac56-24b56004f3f6" name="Default Changelist" comment="" />
+      <created>1599761455129</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599761455129</updated>
+      <workItem from="1599761456215" duration="198000" />
+      <workItem from="1599761679717" duration="107000" />
+      <workItem from="1599761806079" duration="7232000" />
+      <workItem from="1600504252832" duration="1220000" />
+      <workItem from="1600842659845" duration="6941000" />
+      <workItem from="1601492107991" duration="631000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="607" y="137" width="376" height="578" key="#com.intellij.ide.util.MemberChooser" timestamp="1599765552223">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="607" y="137" width="376" height="578" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860/1600.0.1440.900@0.0.1600.860" timestamp="1599765552223" />
+    <state x="568" y="296" width="464" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1599765703645">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="568" y="296" width="464" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1600.860/1600.0.1440.900@0.0.1600.860" timestamp="1599765703645" />
+    <state x="582" y="148" width="426" height="556" key="FileChooserDialogImpl" timestamp="1601493356814">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="582" y="148" width="426" height="556" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1440.900@0.0.1600.860" timestamp="1601493356814" />
+    <state width="1396" height="224" key="GridCell.Tab.0.bottom" timestamp="1601273182215">
+      <screen x="1600" y="0" width="1440" height="900" />
+    </state>
+    <state width="1556" height="224" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1440.900@0.0.1600.860" timestamp="1601012371306" />
+    <state width="1396" height="224" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1440.900@1600.0.1440.900" timestamp="1601273182215" />
+    <state width="1396" height="224" key="GridCell.Tab.0.center" timestamp="1601273182215">
+      <screen x="1600" y="0" width="1440" height="900" />
+    </state>
+    <state width="1556" height="224" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1440.900@0.0.1600.860" timestamp="1601012371305" />
+    <state width="1396" height="224" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1440.900@1600.0.1440.900" timestamp="1601273182215" />
+    <state width="1396" height="224" key="GridCell.Tab.0.left" timestamp="1601273182214">
+      <screen x="1600" y="0" width="1440" height="900" />
+    </state>
+    <state width="1556" height="224" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1440.900@0.0.1600.860" timestamp="1601012371305" />
+    <state width="1396" height="224" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1440.900@1600.0.1440.900" timestamp="1601273182214" />
+    <state width="1396" height="224" key="GridCell.Tab.0.right" timestamp="1601273182215">
+      <screen x="1600" y="0" width="1440" height="900" />
+    </state>
+    <state width="1556" height="224" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1440.900@0.0.1600.860" timestamp="1601012371306" />
+    <state width="1396" height="224" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1440.900@1600.0.1440.900" timestamp="1601273182215" />
+    <state x="382" y="166" width="826" height="521" key="IDE.errors.dialog" timestamp="1599761841262">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="382" y="166" width="826" height="521" key="IDE.errors.dialog/0.0.1600.860/1600.0.1440.900@0.0.1600.860" timestamp="1599761841262" />
+    <state x="437" y="174" width="715" height="504" key="NewModule_or_Project.wizard" timestamp="1601493362112">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="437" y="174" width="715" height="504" key="NewModule_or_Project.wizard/0.0.1600.860/1600.0.1440.900@0.0.1600.860" timestamp="1601493362112" />
+    <state x="303" y="64" key="SettingsEditor" timestamp="1600511830542">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="303" y="64" key="SettingsEditor/0.0.1600.860/1600.0.1440.900@0.0.1600.860" timestamp="1600511830542" />
+    <state x="476" y="199" width="637" height="455" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1600888013900">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="476" y="199" width="637" height="455" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1600.860/1600.0.1440.900@0.0.1600.860" timestamp="1600888013900" />
+    <state x="463" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1600928370695">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1600.860/1600.0.1440.900@0.0.1600.860" timestamp="1600928370695" />
+  </component>
+</project>
