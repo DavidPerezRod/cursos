@@ -419,31 +419,6 @@
         </plugins>
     </build>
 
-    <profiles>
-        <profile>
-            <id>HSQLDB</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <db.script>hsqldb</db.script>
-                <jpa.database>HSQL</jpa.database>
-                <jdbc.driverClassName>org.hsqldb.jdbcDriver</jdbc.driverClassName>
-                <jdbc.url>jdbc:hsqldb:mem:petclinic</jdbc.url>
-                <jdbc.username>sa</jdbc.username>
-                <jdbc.password/>
-            </properties>
-            <dependencies>
-                <dependency>
-                    <groupId>org.hsqldb</groupId>
-                    <artifactId>hsqldb</artifactId>
-                    <version>${hsqldb.version}</version>
-                    <scope>runtime</scope>
-                </dependency>
-            </dependencies>
-        </profile>
-   </profiles>
-
     <repositories>
         <repository>
             <id>repository.spring.milestone</id>
