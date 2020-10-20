@@ -1,0 +1,21 @@
+{
+  "id" : "da8e2801-70ae-4172-b566-d7224d91771b",
+  "name" : "actuator_health",
+  "request" : {
+    "url" : "/actuator/health",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"status\":\"UP\"}",
+    "headers" : {
+      "Content-Type" : "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8",
+      "Date" : "Mon, 19 Oct 2020 06:55:12 GMT"
+    }
+  },
+  "uuid" : "da8e2801-70ae-4172-b566-d7224d91771b",
+  "persistent" : true,
+  "scenarioName" : "scenario-1-actuator-health",
+  "requiredScenarioState" : "scenario-1-actuator-health-2",
+  "insertionIndex" : 6
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "c7eeff7d-2290-49f8-bd96-25aeedbe20da",
+  "name" : "elmundoes",
+  "request" : {
+    "url" : "/elmundo.es",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 301,
+    "headers" : {
+      "Retry-After" : "0",
+      "Location" : "https://www.elmundo.es/elmundo.es",
+      "Accept-Ranges" : "bytes",
+      "Date" : "Mon, 19 Oct 2020 07:01:04 GMT",
+      "X-Served-By" : "cache-mad22044-MAD",
+      "X-Cache" : "HIT",
+      "X-Cache-Hits" : "0"
+    }
+  },
+  "uuid" : "c7eeff7d-2290-49f8-bd96-25aeedbe20da",
+  "persistent" : true,
+  "insertionIndex" : 11
+}

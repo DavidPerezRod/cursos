@@ -1,0 +1,19 @@
+{
+  "id" : "712ab06f-a242-4941-8add-34c3d9918f87",
+  "name" : "wwwelmundoes",
+  "request" : {
+    "url" : "/www.elmundo.es",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\"timestamp\":\"2020-10-19T06:58:06.723+0000\",\"status\":404,\"error\":\"Not Found\",\"message\":\"No message available\",\"path\":\"/www.elmundo.es\"}",
+    "headers" : {
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Date" : "Mon, 19 Oct 2020 06:58:06 GMT"
+    }
+  },
+  "uuid" : "712ab06f-a242-4941-8add-34c3d9918f87",
+  "persistent" : true,
+  "insertionIndex" : 8
+}

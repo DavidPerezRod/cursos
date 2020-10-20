@@ -1,0 +1,19 @@
+{
+  "id" : "289e8f30-2084-4b45-b428-3150c11caa00",
+  "name" : "elmundoes",
+  "request" : {
+    "url" : "/elmundo.es",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\"timestamp\":\"2020-10-19T06:58:16.009+0000\",\"status\":404,\"error\":\"Not Found\",\"message\":\"No message available\",\"path\":\"/elmundo.es\"}",
+    "headers" : {
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Date" : "Mon, 19 Oct 2020 06:58:16 GMT"
+    }
+  },
+  "uuid" : "289e8f30-2084-4b45-b428-3150c11caa00",
+  "persistent" : true,
+  "insertionIndex" : 9
+}
