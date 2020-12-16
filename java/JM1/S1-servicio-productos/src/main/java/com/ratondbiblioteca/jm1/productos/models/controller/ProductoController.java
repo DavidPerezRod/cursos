@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ratondbiblioteca.jm1.productos.models.entity.Producto;
 import com.ratondbiblioteca.jm1.productos.models.sevice.IProductoService;
+import com.ratondbiblioteca.utils.aspects.ExceptionControl;
 
 @RestController
 public class ProductoController {
@@ -28,6 +29,7 @@ public class ProductoController {
 	private IProductoService service;
 	
 	@GetMapping("/listar")
+	@ExceptionControl
 	public List<Producto> listarProductos(){
 		return service.findAll().stream().map(producto ->{
 			producto.setPort(puerto);

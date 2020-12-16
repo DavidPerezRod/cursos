@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.ratondbiblioteca.jm1.productos.models.dao.ProductoDao;
 import com.ratondbiblioteca.jm1.productos.models.entity.Producto;
+import com.ratondbiblioteca.utils.aspects.ExceptionControl;
 
 @Service
 public class ProductoServiceImpl implements IProductoService{
@@ -17,6 +18,7 @@ public class ProductoServiceImpl implements IProductoService{
 	
 	@Override
 	@Transactional(readOnly = true)
+	@ExceptionControl
 	public List<Producto> findAll() {
 		return (List<Producto>) productoDao.findAll();
 	}
@@ -28,7 +30,7 @@ public class ProductoServiceImpl implements IProductoService{
 	}
 
 	@Override
-	@Transactional
+	@Transactional	
 	public Producto save(Producto producto) {
 		return productoDao.save(producto);
 	}
