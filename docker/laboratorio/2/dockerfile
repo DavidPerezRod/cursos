@@ -1,0 +1,19 @@
+FROM ubuntu:18.04
+
+#se añade todo el contenido del directorio en el que estamos al directorio /srv del contenedor
+ADD . /srv
+
+#actualizamos repositorio apt
+RUN apt-get update
+
+#intalamos python-pip y las librerías de desarrollo  en modo desantendido (-y)
+RUN apt install python-pip libmysqlclient-dev python-dev -y
+
+#instala los módulos o librerías indicados en el fichero
+RUN pip install -r /srv/requirements.txt
+
+#exponemos el puerto 5000 que es el que por defecto expone Flask (framework python)
+EXPOSE 5000
+
+#lanza la aplicación definida en el fichero app.py
+CMD /usr/bin/python /srv/app.py
