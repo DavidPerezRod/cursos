@@ -6,7 +6,7 @@
 # Node artifact files
 node_modules/
 dist/
-elasticsearch/data
+elasticsearch/data/nodes
 
 # Compiled Java class files
 *.class
