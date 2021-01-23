@@ -6,7 +6,7 @@
 # Node artifact files
 node_modules/
 dist/
-elasticsearch/data/nodes
+#elasticsearch/data/nodes
 
 # Compiled Java class files
 *.class
@@ -26,7 +26,7 @@ dist/
 
 # JetBrains IDE
 .idea/
-.iml
+*.iml
 
 # Unit test reports
 TEST*.xml
