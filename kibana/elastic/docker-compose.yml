@@ -1,0 +1,78 @@
+###############################################################################################################################################
+# El fichero hay que arrancarlo desde un terminal con docker-compose up. Se puede utilizar el comando -d para que no muestre la salida en el terminal
+# Para inspeccionar el estado de un servicio, si se arranca con -d, docker-compose logs -f "nobmre servicio"
+# Hay ciertos volúmenes para datos y configuración que se vana compartir en local, para persistirlos entre contenedores, si es que hay que hacerlos de nuevo.
+#
+# Las carpetas del mapeo de volúmenes hay que crearlas a mano, si las crea el script, da un error de acceso.
+###############################################################################################################################################
+
+version: '3.2'
+
+networks:
+    elastic:
+      driver: bridge
+
+services:
+  elasticsearch:
+    container_name: elasticsearch
+    hostname: elasticsearch
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.2
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    environment:
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - discovery.type=single-node
+#    volumes:
+#      - ./elasticsearch/data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+    networks:
+      - elastic      
+
+  logstash:
+    container_name: logstash
+    hostname: logstash
+    image: docker.elastic.co/logstash/logstash:7.10.2
+    volumes:
+      - ./logstash/pipeline:/usr/share/logstash/pipeline
+      - ./logstash/config/test.conf:/usr/share/logstash/pipeline/test.conf
+#    command: logstash -f /usr/share/logstash/config/test.yml
+    networks:
+      - elastic      
+
+  kibana:
+    container_name: kibana
+    hostname: kibana
+    image: docker.elastic.co/kibana/kibana:7.10.2
+    ports:
+      - 5601:5601
+    networks:
+      - elastic      
+
+  filebeat:
+    container_name: filebeat
+    hostname: filebeat
+    image: docker.elastic.co/beats/filebeat:7.10.2
+    restart: on-failure
+    volumes:
+      - ./filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml
+      - ./logs:/usr/share/logs
+#    command: filebeat -c cfg.file
+    depends_on:
+      - elasticsearch
+    networks:
+      - elastic      
+
+  metricbeat:
+    container_name: metricbeat
+    hostname: metricbeat
+    image: docker.elastic.co/beats/metricbeat:7.10.2
+    restart: on-failure
+    depends_on:
+      - elasticsearch
+    networks:
+      - elastic
