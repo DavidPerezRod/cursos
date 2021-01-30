@@ -416,7 +416,7 @@ filebeat.inputs:
   # Make sure not file is defined twice as this can lead to unexpected behaviour.
   #ZERTI- Path desde el que se van a leer los logs. Debería estar en la misma máquina que las aplicaciones desde las que se van a enviar los logs.
   paths:
-    - /usr/share/logs/*.log
+    - /usr/share/logs/log-generator*.log
     #- c:\programdata\elasticsearch\logs\*
 
   # Configure the file encoding for reading files with international characters
@@ -430,7 +430,7 @@ filebeat.inputs:
   # Exclude lines. A list of regular expressions to match. It drops the lines that are
   # matching any regular expression from the list. The include_lines is called before
   # exclude_lines. By default, no lines are dropped.
-  #exclude_lines: ['^DBG']
+  exclude_lines: ['^DEBUG']
 
   # Include lines. A list of regular expressions to match. It exports the lines that are
   # matching any regular expression from the list. The include_lines is called before
@@ -520,15 +520,15 @@ filebeat.inputs:
   # for Java Stack Traces or C-Line Continuation
 
   # The regexp Pattern that has to be matched. The example pattern matches all lines starting with [
-  #multiline.pattern: ^\[
+  multiline.pattern: ^(DEBUG|INFO|ERROR|TRACE|FATAL).*
 
   # Defines if the pattern set under pattern should be negated or not. Default is false.
-  #multiline.negate: false
+  multiline.negate: true
 
   # Match can be set to "after" or "before". It is used to define if lines should be append to a pattern
   # that was (not) matched before or after or as long as a pattern is not matched based on negate.
   # Note: After is the equivalent to previous and before is the equivalent to to next in Logstash
-  #multiline.match: after
+  multiline.match: after
 
   # The maximum number of lines that are combined to one event.
   # In case there are more the max_lines the additional lines are discarded.
@@ -975,15 +975,15 @@ filebeat.inputs:
 #filebeat.shutdown_timeout: 0
 
 # Enable filebeat config reloading
-#filebeat.config:
+filebeat.config:
   #inputs:
     #enabled: false
     #path: inputs.d/*.yml
     #reload.enabled: true
     #reload.period: 10s
-  #modules:
+  modules:
     #enabled: false
-    #path: modules.d/*.yml
+    path: modules.d/*.yml
     #reload.enabled: true
     #reload.period: 10s
 
@@ -1464,6 +1464,8 @@ filebeat.inputs:
 # ------------------------------ Logstash Output -------------------------------
 #ZERTI- En su lugar activamos la redirección a logstas, dejando la configuración del puerto por defecto
 output.logstash:
+#output.console:
+#  pretty: true
   # Boolean flag to enable or disable the output module.
   #enabled: true
 
@@ -1579,9 +1581,7 @@ output.logstash:
   # default is 2048.
   #bulk_max_size: 2048
 
-  # The number of seconds to wait for responses from the Logstash server before
-  # timing out. The default is 30s.
-  #timeout: 30s
+  # The number of seconds to waitlogstash:
 
 # -------------------------------- Kafka Output --------------------------------
 #output.kafka:
@@ -1596,7 +1596,6 @@ output.logstash:
   # The Kafka topic used for produced events. The setting can be a format string
   # using any event field. To set the topic from document type use `%{[type]}`.
   #topic: beats
-
   # The Kafka event key setting. Use format string to create a unique event key.
   # By default no event key will be generated.
   #key: ''
@@ -1617,10 +1616,6 @@ output.logstash:
   # Authentication details. Password is required if username is set.
   #username: ''
   #password: ''
-
-  # Kafka version Filebeat is assumed to run against. Defaults to the "1.0.0".
-  #version: '1.0.0'
-
   # Configure JSON encoding
   #codec.json:
     # Pretty-print JSON event
@@ -1649,10 +1644,7 @@ output.logstash:
   #worker: 1
 
   # The number of times to retry publishing an event after a publishing failure.
-  # After the specified number of retries, events are typically dropped.
-  # Some Beats, such as Filebeat, ignore the max_retries setting and retry until
-  # all events are published.  Set max_retries to a value less than 0 to retry
-  # until all events are published. The default is 3.
+  # After the specified number ologstash:ed. The default is 3.
   #max_retries: 3
 
   # The number of seconds to wait before trying to republish to Kafka
@@ -1662,8 +1654,7 @@ output.logstash:
   # timer is reset. The default is 1s.
   #backoff.init: 1s
 
-  # The maximum number of seconds to wait before attempting to republish to
-  # Kafka after a network error. The default is 60s.
+  # The maximum number of secondlogstash: The default is 60s.
   #backoff.max: 60s
 
   # The maximum number of events to bulk in a single Kafka request. The default
@@ -1695,10 +1686,7 @@ output.logstash:
 
   # Set the compression level. Currently only gzip provides a compression level
   # between 0 and 9. The default value is chosen by the compression algorithm.
-  #compression_level: 4
-
-  # The maximum permitted size of JSON-encoded messages. Bigger messages will be
-  # dropped. The default value is 1000000 (bytes). This value should be equal to
+  #compression_level: 4logstash: is 1000000 (bytes). This value should be equal to
   # or less than the broker's message.max.bytes.
   #max_message_bytes: 1000000
 

@@ -61,6 +61,7 @@ services:
     volumes:
       - ./filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml
       - ./logs:/usr/share/logs
+      - ./filebeat/modules.d/logstash.yml:/usr/share/filebeat/modules.d/logstash.yml
 #    command: filebeat -c cfg.file
     depends_on:
       - elasticsearch

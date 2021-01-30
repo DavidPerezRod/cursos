@@ -1,0 +1,7 @@
+- module: logstash
+  log:
+    enabled: true
+    var.paths: ["/path/to/log/logstash.log*"]
+  slowlog:
+    enabled: true
+    var.paths: ["/path/to/log/logstash-slowlog.log*"]
