@@ -39,8 +39,7 @@ services:
     image: docker.elastic.co/logstash/logstash:7.10.2
     volumes:
       - ./logstash/pipeline:/usr/share/logstash/pipeline
-      - ./logstash/config/test.conf:/usr/share/logstash/pipeline/test.conf
-#    command: logstash -f /usr/share/logstash/config/test.yml
+#      - ./logstash/config/test.conf:/usr/share/logstash/pipeline/test.conf
     networks:
       - elastic      
 
@@ -59,9 +58,10 @@ services:
     image: docker.elastic.co/beats/filebeat:7.10.2
     restart: on-failure
     volumes:
+      - ./filebeat/modules.d/logstash.yml:/usr/share/filebeat/modules.d/logstash.yml      
       - ./filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml
-      - ./logs:/usr/share/logs
-      #- ./filebeat/modules.d/logstash.yml:/usr/share/filebeat/modules.d/logstash.yml
+#      - ./logs:/usr/share/logs
+      - ${ZERTI_LOG_OUTPUT}:/usr/share/logs      
 #    command: filebeat -c cfg.file
     depends_on:
       - elasticsearch
