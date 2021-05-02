@@ -1,0 +1,46 @@
+# Module: elasticsearch
+# Docs: https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-module-elasticsearch.html
+
+- module: elasticsearch
+  # Server log
+  server:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    var.paths:
+      - /usr/share/elasticsearch/logs/*.log          # Plain text logs
+      - /usr/share/elasticsearch/logs/*_server.json  # JSON logs
+
+  gc:
+    enabled: true
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    var.paths:
+      - /usr/share/elasticsearch/logs/gc.log.[0-9]*
+      - /usr/share/elasticsearch/logs/gc.log
+  audit:
+    enabled: true
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    var.paths:
+      - /usr/share/elasticsearch/logs/*_access.log  # Plain text logs
+      - /usr/share/elasticsearch/logs/*_audit.json  # JSON logs
+
+  slowlog:
+    enabled: true
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    var.paths:
+      - /usr/share/elasticsearch/logs/*_index_search_slowlog.log     # Plain text logs
+      - /usr/share/elasticsearch/logs/*_index_indexing_slowlog.log   # Plain text logs
+      - /usr/share/elasticsearch/logs/*_index_search_slowlog.json    # JSON logs
+      - /usr/share/elasticsearch/logs/*_index_indexing_slowlog.json  # JSON logs
+
+  deprecation:
+    enabled: true
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    var.paths:
+      - /usr/share/elasticsearch/logs/*_deprecation.log   # Plain text logs
+      - /usr/share/elasticsearch/logs/*_deprecation.json  # JSON logs
